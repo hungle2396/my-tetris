@@ -1,0 +1,54 @@
+.gameover {
+
+    &__container {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        flex-direction: column;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+
+    &__text {
+        letter-spacing: 0.6rem;
+        word-spacing: 1rem;
+        font-size: 12rem;
+        text-align: center;
+        @include mix-colors-text;
+        background-image: linear-gradient(to right bottom, $color-purple, $color-pink, $color-orange, $color-black);
+    }
+
+    &__fig {
+        width: 30rem;
+        height: 30rem;
+        margin-bottom: 12rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__btn__box {
+        position: absolute;
+        bottom: 0;
+        margin-left: 22rem;
+    }
+
+    &__btn {
+        font-size: 2.5rem;
+        word-spacing: 0.6rem;
+        color: rgb(155, 149, 149);
+
+        &::after {
+            opacity: 0.65;
+        }
+
+        &:hover {
+            background-image: linear-gradient(to right bottom, $color-pink, $color-light-blue);
+            filter: brightness(300%);
+        }
+    }
+}

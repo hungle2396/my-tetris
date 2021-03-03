@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Tetris";
+    src: url("../Tetris_Font/Tetris.ttf");
+    font-weight: normal;
+    font-style: normal;
+};
+@import "./abstract_functions";
+@import "./abstract_mixins";
+@import "./abstract_variables";
+
+@import "./base_animation";
+@import "./base_base";
+@import "./base_typography";
+@import "./base_utilities";
+
+@import "./components_bg-video";
+@import "./components_buttons";
+@import "./components_form";
+
+@import "./layout_footer";
+@import "./layout_grid";
+@import "./layout_header";
+@import "./layout_navigation";
+@import "./layout_tetris_middle";
+@import "./layout_tetris_left";
+@import "./layout_tetris_right";
+@import "./layout_tetris_gameOver";
+
+@import "./pages_home";

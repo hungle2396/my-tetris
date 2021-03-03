@@ -1,0 +1,44 @@
+{
+  "name": "template_website",
+  "version": "1.0.0",
+  "description": "Tetris is a tile-matching video game created by Russian software engineer Alexey Pajitnov in 1984. The goal of the game is to prevent the blocks from stacking up to the top of the screen for as long as possible. The player can get rid of these blocks by fitting all the blocks in a row and earn points.",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "dev": "webpack --config webpack.config.js",
+    "build": "webpack --config webpack.prod.js",
+    "postinstall": "webpack -p",
+    "heruko": "node server.js",
+    "compile:sass": "node-sass ./src/sass/main.scss ./dist/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^4.2.1",
+    "file-loader": "^6.1.1",
+    "html-loader": "^1.3.2",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^1.1.1",
+    "sass-loader": "^9.0.3",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^8.0.2",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hungle2396/my-tetris.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hungle2396/my-tetris/issues"
+  },
+  "homepage": "https://github.com/hungle2396/my-tetris#readme"
+}

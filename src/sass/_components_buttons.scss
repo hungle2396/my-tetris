@@ -1,0 +1,48 @@
+.btn {
+    
+    &--small, &--medium, &--large {
+        border: none;
+        outline: none;
+        transition: all 0.5s;
+        @include element-colors-mask;
+        border-radius: 10rem;
+        text-transform: uppercase;
+        font-family: Tetris;
+        font-size: 3rem;
+        background-color: transparent;
+        position: relative;
+    }
+
+    &--small::after, &--medium::after, &--large::after {
+        background-color: black;
+        opacity: 0.45;
+        border-radius: 10rem;
+        position: absolute;
+    }
+
+    &--small {
+        height: 3rem;
+        width: 10rem;
+    }
+
+    &--medium {
+        height: 5rem;
+        width: 15rem;
+    }
+
+    &--large {
+        height: 7rem;
+        width: 20rem;
+    }
+
+    &--small:hover, &--medium:hover, &--large:hover {
+        cursor: pointer;
+        -webkit-background-clip: text;
+        color: transparent;
+        transform: scale(1.05);
+    }
+
+    &--small:active, &--medium:active, &--large:active {
+        transform: scale(0.95);
+    }
+}

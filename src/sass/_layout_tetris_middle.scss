@@ -1,0 +1,72 @@
+.middle__Container {
+    flex: 0 0 20%;
+    display: flex;
+    margin-top: -80rem;
+}
+
+.tetris__Container {
+    height: 160rem;
+    width: 41rem;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    
+    @include element-colors-mask;
+    &--block {
+        height: 3.8rem; // 90 / 40 
+        width: 4rem;     // 60 / 10 
+        //border: 1px solid green;
+    }
+
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+}
+
+.barrier_1 {
+    height: 0.1rem;
+    width: 4rem;
+}
+
+.tetromino {
+    &__blue, &__cyan, &__orange, &__yellow, &__purple, &__red, &__green {
+        border-radius: 0.5rem;
+        border: 2px solid rgb(218, 213, 213);
+        // box-shadow: 0.5rem 0.5rem 2rem rgb(168, 164, 164);
+    }
+    
+    &__blue {
+        background-image: linear-gradient($color-blue, rgb(27, 47, 134));
+        box-shadow: 0.5rem 0.5rem 2rem rgb(43, 77, 228);
+    }
+
+    &__cyan {
+        background-image: linear-gradient($color-light-blue, rgb(34, 145, 196));
+        box-shadow: 0.5rem 0.5rem 2rem rgb(36, 149, 201);
+    }
+
+    &__orange {
+        background-image: linear-gradient($color-orange, rgb(209, 113, 22));
+        box-shadow: 0.5rem 0.5rem 2rem rgb(233, 123, 50);
+    }
+
+    &__yellow {
+        background-image: linear-gradient($color-yellow-orange, rgb(184, 173, 24));
+        box-shadow: 0.5rem 0.5rem 2rem rgb(155, 146, 25);
+    }
+
+    &__purple {
+        background-image: linear-gradient($color-purple, rgb(147, 40, 173));
+        box-shadow: 0.5rem 0.5rem 2rem rgb(147, 40, 173);
+    }
+
+    &__red {
+        background-image: linear-gradient($color-pink, rgb(187, 34, 54));
+        box-shadow: 0.5rem 0.5rem 2rem rgb(175, 54, 33);
+    }
+
+    &__green {
+        background-image: linear-gradient(rgb(85, 207, 92), rgb(109, 177, 45));
+        box-shadow: 0.5rem 0.5rem 2rem rgb(12, 129, 61);
+    }
+}

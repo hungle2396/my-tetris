@@ -1,0 +1,73 @@
+.left__Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 40%;
+    position: relative;
+
+    &__game__name {
+        font-size: 12rem;
+        margin-bottom: 3rem;
+        background-image: linear-gradient(to right bottom, $color-yellow, $color-green, $color-orange, $color-light-blue);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+
+.info {
+    width: 20rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10rem;
+    position: relative;
+
+    @include element-colors-mask;
+    &::after {
+        background-color: black;
+        opacity: 0.5;
+        border-radius: 2rem;
+    }
+    
+    &__Container {
+        padding: 3rem 0;
+        text-align: center;
+    }
+
+    &__Container p {
+        margin-bottom: 1.5rem;
+        font-size: 3rem;
+    }
+
+    &__decoration {
+        width: 12rem;
+        border-radius: 1rem;
+        border: 0.5rem double rgb(187, 175, 175);
+    }
+
+
+    &__score__text, &__level__text, &__lines__text {
+        color: rgb(190, 185, 185);
+    }
+
+    &__score, &__level, &__lines {
+        font-size: 3rem;
+        @include mix-colors-text;
+    }
+
+    &__score {
+        background-image: linear-gradient(to right bottom, $color-purple, $color-pink, $color-orange, $color-black);
+    }
+
+    &__level {
+        background-image: linear-gradient(to right bottom, $color-blue, $color-light-blue, $color-light-pink, $color-black);
+    }
+
+    &__lines {
+        background-image: linear-gradient(to right bottom, $color-pink, $color-orange, $color-yellow-orange);
+    }
+}
+
+
+

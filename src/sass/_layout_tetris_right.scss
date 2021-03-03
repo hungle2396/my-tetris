@@ -1,0 +1,90 @@
+.right__Container {
+    flex: 0 0 40%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__grid__text, &__upcoming__tetris--grid, &__copy--text {
+        margin-right: 35%;
+    }
+
+    &__grid__text {
+        font-size: 3.5rem;
+        font-weight: 500;
+        background-image: linear-gradient(to right bottom, $color-blue, $color-orange);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &__upcoming__tetris--grid {
+        width: 12rem;
+        height: 21rem;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 0.5rem;
+        position: relative;
+        margin-bottom: 5rem;
+        @include element-colors-mask;
+
+        &::after {
+            position: absolute;
+            border-radius: 1rem;
+            background-color: black;
+            opacity: 0.4;
+        }
+    }
+
+    &__tetris--block {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 0.2rem;
+    }
+
+    &__copy--text {
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        font-weight: 200;
+        background-image: linear-gradient(to right bottom, $color-light-pink, $color-light-blue);
+        -webkit-background-clip: text;
+        color: transparent;
+        margin-left: 10rem;
+        margin-top: 10rem;
+    }
+}
+
+.btn__box {
+
+    &__start, &__pause, &__resume, &__quit {
+        margin-right: 35%;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.btn {
+
+    &__start, &__pause, &__resume, &__quit {
+        color: #757373;
+    }
+
+    &__start:hover {
+        background-image: linear-gradient(to right bottom, $color-orange, $color-pink);
+        filter: brightness(150%);
+    }
+
+    &__pause:hover {
+        background-image: linear-gradient(to right bottom, $color-blue, $color-light-blue, $color-light-pink, $color-black);
+        filter: brightness(150%);
+    }
+
+    &__resume:hover {
+        background-image: linear-gradient(to right bottom, $color-pink, $color-light-pink);
+        filter: brightness(150%);
+    }
+
+    &__quit:hover {
+        background-image: linear-gradient(to right bottom, $color-light-purple, $color-green, $color-yellow-orange);
+        filter: brightness(150%);
+    }
+}

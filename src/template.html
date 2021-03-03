@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatile" content="ie=edge"/>
+        <link rel="shortcut icon" href="./dist/img/favicon.png" type="image/x-icon">
+        <title>My Tetris</title>
+    </head>
+    
+	<body class="body">
+        <audio id="tetris__intro">
+            <source src="audio/tetris_intro.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="tetris__music">
+            <source src="audio/Tetris_song.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="tetris__level__up">
+            <source src="audio/level_up.wav" type="audio/mpeg">
+        </audio>
+
+        <audio id="tetris__gameover__audio">
+            <source src="audio/gameover.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="tetris__single__row">
+            <source src="audio/single_row.wav" type="audio/mpeg">
+        </audio>
+
+        <audio id="tetris__double__row">
+            <source src="audio/double_row.wav" type="audio/mpeg">
+        </audio>
+
+        <audio id="tetris__triple__row">
+            <source src="audio/triple_row.wav" type="audio/mpeg">
+        </audio>
+
+        <audio id="tetris__tetris__row">
+            <source src="audio/tetris_row.wav" type="audio/mpeg">
+        </audio>
+
+        <audio id="tetris__landing">
+            <source src="audio/landing.wav" type="audio/mpeg">
+        </audio>
+
+        <audio id="tetris__move">
+            <source src="audio/move.wav" type="audio/mpeg">
+        </audio>
+
+        <audio id="tetris__rotate">
+            <source src="audio/rotate.wav" type="audio/mpeg">
+        </audio>
+
+        <audio id="tetris__pause">
+            <source src="audio/pause.wav" type="audio/mpeg">
+        </audio>
+
+        <audio id="tetris__noice">
+            <source src="audio/noice.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="tetris__impressive">
+            <source src="audio/Impressive.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="tetris__excellence">
+            <source src="audio/Excellence.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="left__Container">
+
+            <h1 class="left__Container__game__name">My Tetris</h1>
+            <div class="info">
+                <div class="info__Container">
+                    <p class="info__score__text">Score</p>
+                    <div class="info__decoration info__score">0</div>
+                </div>
+
+                <div class="info__Container">
+                    <p class="info__level__text">Level</p>
+                    <div class="info__decoration info__level">1</div>
+                </div>
+
+                <div class="info__Container">
+                    <p class="info__lines__text">Lines</p>
+                    <div class="info__decoration info__lines">0</div>
+                </div>
+            </div>
+        </div>
+
+        <!-------- container -------->
+        <div class="middle__Container">
+            <div class="tetris__Container rainbow--border">
+                <!-- Tetris rows and columns
+                <div class="row_1">
+
+                </div>
+                -->
+            </div>
+        </div>
+
+        <div class="right__Container">
+            
+            <h1 class="right__Container__grid__text">
+                Next Tetromino
+            </h1>
+            <div class="right__Container__upcoming__tetris--grid">
+            
+            </div>
+            
+
+            <div class="btn__box__start">
+                <button class="btn--large btn__start">Start</button>
+            </div>
+
+
+            <div class="btn__box__pause">
+                <button class="btn--large btn__pause">Pause</button>
+            </div>
+
+            <div class="btn__box__resume">
+                <button class="btn--large btn__resume">Resume</button>
+            </div>
+
+            <div class="btn__box__quit">
+                <button class="btn--large btn__quit">Quit / ESC</button>
+            </div>
+
+            <div class="right__Container__copyright">
+                <p class="right__Container__copy--text">Tetris © 1985~2020 Tetris Holding. Tetris theme song and Tetrominos are trademarks of Tetris Holding. The Tetris trade dress is owned by Tetris Holding. Licensed to The Tetris Company. Tetris Game Designed by Alexey Pajitnov. All Rights Reserved.</p>
+            </div>
+        </div>
+
+        
+        <div class="gameover__container">
+            <h1 class="gameover__text">Game Over</h1>
+            <figure class="gameover__fig">
+                <img class="gameover__img" src="./img/sad_emoji.png" alt="sad pepe">
+            </figure>
+            
+            <div class="gameover__btn__box">
+                <button class="btn--large gameover__btn">Play Again</button>
+            </div>
+        </div>
+    </body>
+</html>
