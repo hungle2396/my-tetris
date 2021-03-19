@@ -1,7 +1,9 @@
 ## What is Tetris?
 Tetris is a tile-matching video game created by Russian software engineer Alexey Pajitnov in 1984. The goal of the game is to prevent the blocks from stacking up to the top of the screen for as long as possible. The player can get rid of these blocks by fitting all the blocks in a row and earn points.
 
-You can play it on Netlify: https://tetris96.netlify.app/
+## Where Can I play it?
+I deployed the application on Netlify, so it's just click on the link below to play: 
+[My Tetris](https://tetris96.netlify.app/)
 
 *** Please install npm module first before you play if using an editor!***
 Type in "npm install" in your vscode for the terminal to download the npm_module
