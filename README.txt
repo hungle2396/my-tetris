@@ -3,7 +3,7 @@ Tetris is a tile-matching video game created by Russian software engineer Alexey
 You can play it on Netlify: https://tetris96.netlify.app/
 
 *** Please install npm module first before you play if using an editor!***
-Type in "npm install" in your vscode for the terminal to down the npm_module
+Type in "npm install" in your vscode for the terminal to download the npm_module
 
 ***** Instruction to PLAY *******
 1. open the "dist" folder.
