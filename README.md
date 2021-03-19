@@ -12,7 +12,7 @@ I deployed the application on Netlify, so it's as easy as click and play:
 4. Finally, in your terminal, type in "npm run start", this will automatically open a localhost:3000 or localhost:8080 and render the game
 6. Enjoy the game!
 
-***** Read the code *****
+## Read the code
 Because I used Webpack to compile all my files into a single javascript, it is very hard to read the final javascript file.
 
 1. Please go to the "src" folder.
