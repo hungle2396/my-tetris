@@ -1,6 +1,7 @@
 ## What is Tetris?
 Tetris is a tile-matching video game created by Russian software engineer Alexey Pajitnov in 1984. The goal of the game is to prevent the blocks from stacking up to the top of the screen for as long as possible. The player can get rid of these blocks by fitting all the blocks in a row and earn points.
 
+![Image of My Tetris](https://github.com/hungle2396/my-tetris/blob/main/src/img/my_tetris_github.png)
 ## Where Can I Play It?
 I deployed the application on Netlify, so it's as easy as click and play:
 [My Tetris](https://tetris96.netlify.app/)
