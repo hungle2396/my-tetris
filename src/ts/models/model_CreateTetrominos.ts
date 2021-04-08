@@ -68,7 +68,7 @@ const tetrominos_array_shapes = [J_tetromino, I_tetromino, L_tetromino, O_tetrom
 
 // Pick a random number from 0 to 6
 export const get_random_number = () => {
-    let random_Number = Math.floor(Math.random() * 6) + 1;
+    let random_Number = Math.floor(Math.random() * 7);
 
     return random_Number;
 }
