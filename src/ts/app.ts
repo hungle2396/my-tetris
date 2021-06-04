@@ -139,6 +139,6 @@ view_base.elements.tetris_play_again.addEventListener("click", () => {
 
 state.game_playing = false;
 
-if (!state.game_playing) {
-    model_Audio.play_tetris_intro();
-}
+// if (!state.game_playing) {
+//     model_Audio.play_tetris_intro();
+// }
